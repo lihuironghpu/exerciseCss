@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>z-index与层叠上下文</title>
+    <style>
+        body{
+            background: #ffe0d9;
+        }
+        .box {
+            background: #93ccff;
+            position: absolute;
+            left: 200px;
+        }
+        .box img{
+            margin: 20px 10px 20px -30px;
+            position: relative;
+            z-index: -1;
+        }
+        .box2{
+            left: 500px;
+            z-index: 0;
+        }
+        
+    </style>
+</head>
+<body>
+<p>为何定位元素的层叠顺序高于普通元素？定位元素默认z-index:auto，七层关系中第2高</p>
+<p>1:img z-index:-1,box1 z-index:auto未创建层叠上下文，img的层叠上下文是body元素，在body背景之上，box1块之下</p>
+<p>2:img z-index:-1,box2 z-index:0创建层叠上下文，img的层叠上下文是box2元素，在box2背景之上</p>
+    <div class="box box1">
+        1<img src="../img/hua.jpg" alt="风景画！"/>
+    </div>
+    <div class="box box2">
+        2<img src="../img/hua.jpg" alt="风景画！"/>
+    </div>
+</body>
+</html>

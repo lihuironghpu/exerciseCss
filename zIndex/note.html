@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>zIndex说明</title>
+</head>
+<body>
+<dl>
+    <dt>zIndex值有哪些？</dt>
+    <dd>z-index: auto; 默认值</dd>
+    <dd>z-index: int; 整数值</dd>
+    <dd>z-index: inherit; 继承</dd>
+</dl>
+<dl>
+    <dt>zIndex有哪些特性？</dt>
+    <dd>支持负值 z-index: -1;</dd>
+    <dd>支持css3 animation</dd>
+    <dd>在css2.1时代需要和定位配合使用</dd>
+</dl>
+<dl>
+    <dt>注意点：</dt>
+    <dd>定位属性要使用非static的zIndex才有作用</dd>
+</dl>
+<dl>
+    <dt>层叠顺序（由低到高）</dt>
+    <dd>background/border</dd>
+    <dd>负z-index</dd>
+    <dd>block块状水平盒子</dd>
+    <dd>float浮动盒子</dd>
+    <dd>inline/inline-block水平盒子</dd>
+    <dd>z-index:auto或看成z-index:0</dd>
+    <dd>正z-index</dd>
+</dl>
+<dl>
+    <dt>z－index的特点</dt>
+    <dd>定位元素默认的z-index:auto可以看成是z-index:0</dd>
+    <dd>z-index不为auto的定位元素会创建层叠上下文</dd>
+    <dd>z-index层叠顺序的比较止步于父级层叠上下文</dd>
+</dl>
+</body>
+</html>

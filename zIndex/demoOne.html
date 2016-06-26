@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo1</title>
+    <style>
+        div,p{margin: 0; padding: 0;}
+        .box{
+            position: relative;
+        }
+        .box01{
+            left: 50px;
+            z-index: auto;
+        }
+        .box02{
+            left: 150px;
+            z-index: 1;
+        }
+        .box img{
+            -webkit-box-shadow: 1px 1px 5px #000 ;
+            -moz-box-shadow: 1px 1px 5px #000 ;
+            box-shadow: 1px 1px 5px #000;
+        }
+        .box01 img{
+            position: absolute;
+            z-index: 2;
+        }
+        .box02 img{
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box01">
+        <img src="../img/hua.jpg" alt="我是第一幅画！"/>
+    </div>
+    <div class="box box02">
+        <img src="../img/hua.jpg" alt="我是第二幅画！"/>
+
+    </div>
+</body>
+</html>

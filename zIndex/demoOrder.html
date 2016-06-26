@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        img{
+            float: left;
+            margin-right: -20px;
+        }
+        .box{
+            width: 700px;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+        .inline-block{
+            display: inline-block;
+        }
+        .block{
+            display: block;
+        }
+        .box>div{
+            width: 200px;
+            height: 80px;
+            line-height: 40px;
+            padding-left: 10px;
+        }
+        .box>div:first-child{
+            background: #93ccff;
+            margin-bottom: -20px;
+        }
+        .box>div:last-child{
+            margin-left: 30px;
+            background: #ffa79a;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <img src="../img/hua.jpg" alt="我是图片"/>
+    内敛元素层叠顺序高于浮动元素的层叠顺序..sjdh实施科技大会上的讲话圣诞节没事大家说的话s..sjdhsjd。sjdhsjhd ，是激动还是激动好时。精神的黄金时代是对 圣诞节回事点击。江苏队和时代精神的 ；时间的黄金时代还是觉得
+    实施科技大会上的讲话圣诞节没事大家说的话s..sjdhsjd。sjdhsjhd ，是激动还是激动好时。精神的黄金时代是对 圣诞节回事点击。江苏队和时代精神的 ；时间的黄金时代还是觉得
+    实施科技大会上的讲话圣诞节没事大家说的话s..sjdhsjd。sjdhsjhd ，是激动还是激动好时。精神的黄金时代是对 圣诞节回事点击。江苏队和时代精神的 ；时间的黄金时代还是觉得
+    实施科技大会上的讲话圣诞节没事大家说的话s..sjdhsjd。sjdhsjhd
+</div>
+<div class="box">
+    <p>内敛块元素层级高于块元素，但是第二个div里边的文本又是内敛，层叠上下文后来者居上，所以在第一个div和第二个div之上</p>
+</div>
+<div class="box">
+    <div class="inline-block">inline-block</div>
+    <div class="block">block</div>
+</div>
+</body>
+</html>
