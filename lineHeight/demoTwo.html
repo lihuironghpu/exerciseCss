@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        p{
+            font-size: 36px;
+            line-height: 72px;
+        }
+        em{
+            line-height: 100px;
+            vertical-align: 40px;/*不写vertical-align的时候，p的高度就是em的高度，加上此属性以后，并非em的高度*/
+        }
+        span{
+            font-size: 100px;
+            line-height: 1.5;/*根据字体大小计算*/
+        }
+    </style>
+</head>
+<body>
+    <p>这是一个<em>DEMO</em>!</p>
+    <span>平方黑体</span>
+
+<!--normal-->
+<!--number-->
+<!--length-->
+<!--percent-->
+<!--inherit-->
+</body>
+<script>
+    var pEle=document.querySelector("p");
+    console.log(pEle.clientHeight);
+    var spanEle=document.querySelector("span");
+    console.log(spanEle.clientHeight);
+
+</script>
+</html>

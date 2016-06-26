@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>其他属性与层叠上下文</title>
+    <style>
+        body{
+            background: #bfa4c8;
+        }
+        .box{
+            width: 200px;
+            margin: 0 auto;
+            background: #2c95c4;
+            /*opacity: 0.5;/!*opacity不为1的时候会创建层叠上下文*!/*/
+            /*opacity: 1;*/
+            transform: rotate(0deg);/*transform不等于none的时候会创建层叠上下文*/
+            /*mix-blend-mode: darken;/!*混合模式会创建层叠上下文*!/*/
+            /*filter: blur(5px);*/
+            /*position: fixed;/!*Chrome等blink和webkit浏览器，手机移动端会创建层叠上下文*!/*/
+            /*will-change: transform;*/
+            /*-webkit-overflow-scrolling: scroll;/!*移动端特有属性*!/*/
+        }
+        img{
+            position: relative;
+            z-index: -1;
+            margin: 20px 0 20px -50px;
+        }
+    </style>
+</head>
+<body>
+<div class="box"><img src="../img/hua.jpg" alt=""/></div>
+</body>
+</html>
